@@ -1,0 +1,10 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+{{with .brainee}}
+<h1>Brainee ajoutée par {{.Author}} avec SUCCES</h1>
+<a href='{{url "App.Brainee" .BraineeId}}'>Afficher Brainee récement ajuotée</a>
+{{end}}
+</br></br>
+<a href="/">Back to form</a>
+
+{{template "footer.html" .}}

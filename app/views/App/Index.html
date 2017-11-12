@@ -1,0 +1,32 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+
+<header class="jumbotron" style="background-color:#A9F16C">
+  <div class="container">
+    <div class="row">
+      <h1>{{.greeting}}</h1>
+      <p></p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div>
+      {{template "flash.html" .}}
+    </div>
+	<form action="/brainees" method="POST">
+		<table class="table">
+			<tr><td>Brainee Id</td><td><input type="number" required name="brainee.BraineeId"/></td></tr>
+			<tr><td>Text</td><td><input type="textarea" required name="brainee.Text"/></td></tr>
+			<tr><td>Author</td><td><input type="text" required name="brainee.Author"/></td></tr>
+			<tr><td>Brand</td><td><input type="text" required name="brainee.Brand" /></td></tr>
+		</table>
+	
+	
+    <input type="submit" value="Ajouter Brainee" />
+	</form>
+  </div>
+</div>
+
+{{template "footer.html" .}}

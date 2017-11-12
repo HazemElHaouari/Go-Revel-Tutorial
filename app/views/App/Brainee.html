@@ -1,0 +1,15 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+{{with .brainee}}
+<h1>Brainee ayant ID: {{.BraineeId}}</h1>
+<table class="table">
+	<tr><td>Text</td><td>{{.Text}}</td></tr>
+	<tr><td>Author</td><td>{{.Author}}</td></tr>
+	<tr><td>Brand</td><td>{{.Brand}}</td></tr>
+</table>
+{{end}}
+</br>
+</br>
+</br>
+<a href="/">Back to form</a>
+{{template "footer.html" .}}

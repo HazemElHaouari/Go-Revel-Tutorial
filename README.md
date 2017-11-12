@@ -1,19 +1,20 @@
-# Welcome to Revel
+# Go-Revel-Tutorial
 
-A high-productivity web framework for the [Go language](http://www.golang.org/).
+Revel is A web framework for the [Go language](http://www.golang.org/).
 
+This application is a mini project in which I realized a method POST which create a new Model and a method GET which can show a Model with its Id and to simplify the configuration I stored the models in the cache.
 
-### Start the web server:
+After you clone these project
+### You can  Start the web server:
 
-   revel run myapp
+   revel run Go-Revel-Tutorial
 
-### Go to http://localhost:9000/ and you'll see:
+### Go to http://localhost:9000/ and you'll explore the Application
 
-    "It works"
 
 ## Code Layout
 
-The directory structure of a generated Revel application:
+The directory structure of this application:
 
     conf/             Configuration directory
         app.conf      Main app configuration file
@@ -23,6 +24,7 @@ The directory structure of a generated Revel application:
         init.go       Interceptor registration
         controllers/  App controllers go here
         views/        Templates directory
+        models/       Contains the model of The application
 
     messages/         Message files
 
@@ -34,7 +36,9 @@ The directory structure of a generated Revel application:
     tests/            Test suites
 
 
-## Help
+
+
+## Ressources
 
 * The [Getting Started with Revel](http://revel.github.io/tutorial/gettingstarted.html).
 * The [Revel guides](http://revel.github.io/manual/index.html).
